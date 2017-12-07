@@ -9,6 +9,7 @@ so ~/.vim/plugins.vim
 set number
 set tabstop=2
 set background=dark
+set nofixendofline
 au BufRead,BufNewFile Vagrantfile set ft=ruby
 colorscheme Benokai 
 
