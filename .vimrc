@@ -10,6 +10,7 @@ set number
 set tabstop=2
 set background=dark
 set nofixendofline
+set relativenumber
 au BufRead,BufNewFile Vagrantfile set ft=ruby
 colorscheme Benokai 
 
