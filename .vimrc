@@ -12,7 +12,7 @@ set background=dark
 set nofixendofline
 set relativenumber
 au BufRead,BufNewFile Vagrantfile set ft=ruby
-colorscheme Benokai 
+colorscheme gruvbox 
 
 
 "--------------Searching--------------
@@ -25,6 +25,7 @@ let mapleader = ','
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 nmap <Leader><space> :nohlsearch<cr>
 nmap <C-\> :NERDTreeToggle<cr>
+nmap <C-p> :FZF<cr>
 
 
 "--------------Auto Commands--------------
