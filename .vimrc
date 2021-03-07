@@ -2,8 +2,7 @@ syntax enable
 set nocompatible
 
 "--------------Plugins--------------
-so ~/.vim/plugins.vim
-
+so ~/dotfiles/plugins.vim
 
 "--------------Visuals--------------
 set number
@@ -24,17 +23,17 @@ colorscheme gruvbox
 set hlsearch
 set incsearch
 
-
+"
 "--------------Airline--------------
 let g:airline_theme = 'gruvbox'
-let g:airline#extensions#tabline#enabled = 0 
-let g:airline#extensions#branch#enabled = 1 
-let g:airline_left_sep = '  '
+"let g:airline#extensions#tabline#enabled = 0 
+"let g:airline#extensions#branch#enabled = 1 
+"let g:airline_left_sep = '  '
 " let g:airline_right_sep = ' 🟆  '
-let g:airline_section_warning = '' 
-let g:airline_section_y = '' 
-let g:airline_section_x = '' 
-set laststatus=2 " for airline
+"let g:airline_section_warning = '' 
+"let g:airline_section_y = '' 
+"let g:airline_section_x = '' 
+"set laststatus=2 " for airline
 
 
 "--------------Key Mappings--------------
@@ -58,3 +57,5 @@ augroup autosourcing
 	autocmd!
 	autocmd BufWritePost .vimrc source %
 augroup END
+
+command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, {'options': '--delimiter : --nth 4..'}, <bang>0)
