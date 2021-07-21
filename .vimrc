@@ -1,5 +1,6 @@
 syntax enable
 set nocompatible
+filetype off
 
 "--------------Plugins--------------
 so ~/dotfiles/plugins.vim
@@ -35,12 +36,16 @@ let g:airline_theme = 'gruvbox'
 "let g:airline_section_x = '' 
 "set laststatus=2 " for airline
 
+"--------------ViM Proc------------------
+"autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
+"let g:phpcomplete_index_composer_command="./vendor/bin/sail composer"
 
 "--------------Key Mappings--------------
-let mapleader = ','
+let mapleader = ' '
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 nmap <Leader><space> :nohlsearch<cr>
 nmap <C-\> :NERDTreeToggle<cr>
+nmap <Leader><Bslash> :NERDTreeFind<cr>
 nmap <C-p> :Files<cr>
 
 
