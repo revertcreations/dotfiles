@@ -7,7 +7,7 @@ so ~/dotfiles/plugins.vim
 
 "--------------Visuals--------------
 set number
-set smartindent
+"set smartindent
 set expandtab
 set tabstop=2
 set shiftwidth=2
@@ -64,3 +64,5 @@ augroup autosourcing
 augroup END
 
 command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, {'options': '--delimiter : --nth 4..'}, <bang>0)
+autocmd BufNewFile,BufRead *.blade.php set syntax=html
+autocmd BufNewFile,BufRead *.blade.php se filetype=html

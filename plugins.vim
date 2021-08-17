@@ -23,6 +23,9 @@ Plugin 'jwalton512/vim-blade'
 Plugin 'yaegassy/coc-blade-formatter'
 Plugin 'iamcco/coc-tailwindcss'
 Plugin 'valloric/youcompleteme'
+Plugin 'prettier/vim-prettier'
+Plugin 'eslint/eslint'
+Plugin 'w0rp/ale'
 
 call vundle#end()
 filetype plugin indent on
