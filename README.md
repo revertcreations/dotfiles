@@ -1,5 +1,5 @@
 # dotfiles
-Here you will find my somewhat untidy and ever evolving configuration files. I have many machines including: MacOS, Ubuntu, Arch, PopOS!, and even Windows (gotta get gaming on somehow!)
+Here you will find my somewhat untidy and ever evolving configuration files. I have many machines including: MacOS, Ubuntu, Arch, PopOS!, and even Windows 11 (gotta get gaming on somehow! and of course these dotfiles have nothing to do with windows...)
 
 ## vim
 ViM is my preferred editor, thought I have spend many professional hours in Sublime Text, Visual Studio Code, and even some PHPStorm. This config is using the best colortheme Gruvbox, and is mostly set up for fullstack Javascript development.
