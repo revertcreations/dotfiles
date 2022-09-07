@@ -16,6 +16,7 @@ set background=dark
 set noswapfile
 set nofixendofline
 set relativenumber
+set backspace=indent,eol,start
 au BufRead,BufNewFile Vagrantfile set ft=ruby
 colorscheme gruvbox 
 
@@ -39,6 +40,9 @@ let g:airline_theme = 'gruvbox'
 "--------------ViM Proc------------------
 "autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
 "let g:phpcomplete_index_composer_command="./vendor/bin/sail composer"
+
+"----------------Prettier----------------
+let g:prettier#exec_cmd_path = "~/.vim/bundle/vim-prettier/autoload/prettier"
 
 "--------------Key Mappings--------------
 let mapleader = ' '
